@@ -1,4 +1,4 @@
 # SampleRepo
 
 # GitHub Actions
-# Test Result, Artifacts, Packages, Sonar Cloud
+# Test Results, Artifacts, Packages, Sonar Cloud

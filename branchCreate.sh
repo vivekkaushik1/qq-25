@@ -5,19 +5,16 @@ y=1
 j=1
 while [ $x -le 1000 ]
 do
-  echo "Welcome $x times"
-  string=AA_PR_$((x))
-  git branch $string
-  git checkout -b $string
-  git push -u origin $string
-  git push --set-upstream origin $string
-  #git push -u origin $string
-  echo $string
   x=$(( $x + 1 ))
-  sh ./createCOmmit.sh
+  sh ./createCommit.sh
   rm -rf random*
   git add .
-  git commit -m "SDDD"
-  git push
+  git commit -m "ADO Commits"
+  sleep 10.0
+  #git tag -a v1.1 -m "version 1.1"
+  #git tag -a v2.1 -m "version 2.1"
+  #git push --tags origin
+  #git checkout master
+  #git merge $string
 done
 
